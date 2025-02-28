@@ -56,5 +56,12 @@
       "model": "gpt-4o"
     },
     "version": "2"
+  },
+  "terminal": {
+    "env": {
+      "PHAN_DISABLE_XDEBUG_WARN": "1",
+      "VSCODE_TERM": "true",
+      "XDEBUG_CONFIG": "idekey=VSCODE"
+    }
   }
 }
