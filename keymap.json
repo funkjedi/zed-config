@@ -1,0 +1,38 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      // need this so keymap will close terminal after having opened
+      // it from the editor context
+      "cmd-1": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-1": "workspace::ToggleBottomDock",
+      "cmd-i": "assistant::InlineAssist",
+      "cmd-alt-down": "editor::GoToDefinition",
+      "ctrl-cmd-up": "editor::MoveLineUp",
+      "ctrl-cmd-down": "editor::MoveLineDown",
+      "ctrl-shift-k": "editor::DeleteLine",
+      "cmd-alt-f": "buffer_search::DeployReplace",
+      "cmd-shift-d": "editor::DuplicateLineDown",
+      "ctrl-shift-left": "editor::SelectToPreviousSubwordStart",
+      "ctrl-shift-right": "editor::SelectToNextSubwordEnd"
+    }
+  }
+]

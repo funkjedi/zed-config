@@ -1,0 +1,60 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Unity Dark"
+  },
+  "icon_theme": "Unity Dark",
+  "base_keymap": "SublimeText",
+  "ui_font_size": 18,
+  "buffer_font_family": "OperatorMono Nerd Font Mono",
+  //"buffer_font_family": "Operator Mono SSm Lig",
+  //"buffer_font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_size": 16.0,
+  "project_panel": {
+    "dock": "right"
+  },
+  "languages": {
+    "PHP": {
+      "language_servers": ["intelephense", "!phpactor"]
+    }
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "experimental.theme_overrides": {
+    // missing PHP colours/styles
+    // @see: ~/.config/zed/themes/unity/themes/unity.json
+    // - use statements
+    // - class names in method/fundtion parameter definitions
+    // - name of class after "new" keyword
+    // - class name when executing a static method, ex Arr::get()
+
+    // this is also controlling the search input background
+    // but search background should be #303136 t match VSCode
+    "editor.background": "#1b1d1e",
+
+    "syntax": {
+      "operator": {
+        "color": "#e16b75" // for dollar sign in PHP variable
+      }
+    }
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  }
+}

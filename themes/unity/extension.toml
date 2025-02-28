@@ -1,0 +1,7 @@
+id = "unity"
+name = "Unity"
+version = "0.0.1"
+schema_version = 1
+authors = ["funkjedi"]
+description = "Unity"
+repository = "https://github.com/funkjedi/zed-config"
