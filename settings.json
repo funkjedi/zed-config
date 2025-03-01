@@ -14,17 +14,57 @@
   },
   "icon_theme": "Unity Dark",
   "base_keymap": "SublimeText",
+  "cursor_blink": true,
   "ui_font_size": 18,
-  "buffer_font_family": "OperatorMono Nerd Font Mono",
-  //"buffer_font_family": "Operator Mono SSm Lig",
-  //"buffer_font_family": "FiraCode Nerd Font Mono",
-  "buffer_font_size": 16.0,
+
+  // to output list of available fonts
+  // system_profiler -json SPFontsDataType | grep \"family | sort | uniq
+  "buffer_font_family": "Operator Mono SSm Lig",
+  "buffer_font_size": 15.8,
+
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "git_panel": {
+    "button": true
+  },
   "project_panel": {
-    "dock": "right"
+    "dock": "right",
+    "file_icons": false,
+    "folder_icons": true,
+    "indent_size": 14
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "terminal": {
+    "button": false,
+    "env": {
+      "PHAN_DISABLE_XDEBUG_WARN": "1",
+      "VSCODE_TERM": "true",
+      "XDEBUG_CONFIG": "idekey=VSCODE"
+    }
+  },
+  "file_finder": {
+    "file_icons": false
   },
   "languages": {
     "PHP": {
       "language_servers": ["intelephense", "!phpactor"]
+    },
+    "SQL": {
+      "format_on_save": "off"
     }
   },
   "git": {
@@ -48,20 +88,6 @@
       "operator": {
         "color": "#e16b75" // for dollar sign in PHP variable
       }
-    }
-  },
-  "assistant": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
-    },
-    "version": "2"
-  },
-  "terminal": {
-    "env": {
-      "PHAN_DISABLE_XDEBUG_WARN": "1",
-      "VSCODE_TERM": "true",
-      "XDEBUG_CONFIG": "idekey=VSCODE"
     }
   }
 }
