@@ -45,7 +45,9 @@
         "tab.active_background": "#1b1d1e",
         "search.match_background": "#d19a6644",
         "panel.background": "#232527",
-        "panel.focused_border": "#ff983d",
+        "panel.focused_border": "#232527",
+        "panel.indent_guide": "#232527",
+        "panel.indent_guide_hover": "#232527",
         "pane.focused_border": null,
         "scrollbar.thumb.background": "#5d595c20",
         "scrollbar.thumb.hover_background": "#5a6375",
@@ -56,14 +58,16 @@
         "editor.background": "#1b1d1e", // search input background as well but search background should be #303136
         "editor.gutter.background": "#1b1d1e",
         "editor.subheader.background": "#5d595c30",
-        "editor.active_line.background": "#5d595c20",
+        "editor.active_line.background": "#282A2E",
         "editor.highlighted_line.background": "#2f343eff",
         "editor.line_number": "#54575f",
         "editor.active_line_number": "#dddddd",
         "editor.hover_line_number": "#acb0b4",
-        "editor.invisible": "#878a98ff",
+        "editor.invisible": "#4a4e54",
         "editor.wrap_guide": "#5d595c20",
         "editor.active_wrap_guide": "#5d595c20",
+        "editor.indent_guide": "#1b1d1e",
+        "editor.indent_guide_active": "#1b1d1e",
         "editor.document_highlight.bracket_background": "#414a4b40", // doesn't exist in one
         "editor.document_highlight.read_background": "#414a4b40",
         "editor.document_highlight.write_background": "#414a4b40",
@@ -143,7 +147,7 @@
           {
             "cursor": "#74ade8ff",
             "background": "#74ade8ff",
-            "selection": "#74ade83d"
+            "selection": "#373b42"
           },
           {
             "cursor": "#be5046ff",
@@ -182,66 +186,26 @@
           }
         ],
         "syntax": {
-          "comment": {
-            "color": "#707070"
-          },
-          "attribute": {
-            "color": "#d19a66"
-          },
-          "constant": {
-            "color": "#d19a66"
-          },
-          "constructor": {
-            "color": "#E5C07B"
-          },
-          "embedded": {
-            "color": "#abb2bf"
-          },
-          "function": {
-            "color": "#61afef"
-          },
-          "keyword": {
-            "color": "#c678dd"
-          },
-          "number": {
-            "color": "#d19a66"
-          },
-          "operator": {
-            "color": "#abb2bf"
-          },
-          "property": {
-            "color": "#e06c75"
-          },
-          "string": {
-            "color": "#98c379"
-          },
-          "string.escape": {
-            "color": "#98c379"
-          },
-          "string.regex": {
-            "color": "#98c379"
-          },
-          "string.special": {
-            "color": "#56b6c2"
-          },
-          "string.special.symbol": {
-            "color": "#56b6c2"
-          },
-          "tag": {
-            "color": "#e06c75"
-          },
-          "text.literal": {
-            "color": "#98c379"
-          },
-          "type": {
-            "color": "#e5c07b"
-          },
-          "variable": {
-            "color": "#e06c75"
-          },
-          "variable.special": {
-            "color": "#e5c07b"
-          }
+          "comment": { "color": "#707070" },
+          "attribute": { "color": "#d19a66" },
+          "constant": { "color": "#d19a66" },
+          "constructor": { "color": "#E5C07B" },
+          "embedded": { "color": "#abb2bf" },
+          "function": { "color": "#61afef" },
+          "keyword": { "color": "#c678dd" },
+          "number": { "color": "#d19a66" },
+          "operator": { "color": "#abb2bf" },
+          "property": { "color": "#e06c75" },
+          "string": { "color": "#98c379" },
+          "string.escape": { "color": "#98c379" },
+          "string.regex": { "color": "#98c379" },
+          "string.special": { "color": "#56b6c2" },
+          "string.special.symbol": { "color": "#56b6c2" },
+          "tag": { "color": "#e06c75" },
+          "text.literal": { "color": "#98c379" },
+          "type": { "color": "#e5c07b" },
+          "variable": { "color": "#e06c75" },
+          "variable.special": { "color": "#e5c07b" }
         }
       }
     }

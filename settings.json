@@ -16,12 +16,9 @@
   "base_keymap": "SublimeText",
   "cursor_blink": true,
   "ui_font_size": 18,
-
-  // to output list of available fonts
-  // system_profiler -json SPFontsDataType | grep \"family | sort | uniq
-  "buffer_font_family": "Operator Mono SSm Lig",
-  "buffer_font_size": 15.8,
-
+  "buffer_font_family": "MonacoLigaturized Nerd Font Mono",
+  //"buffer_font_family": "Operator Mono SSm Lig",
+  "buffer_font_size": 15,
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false
@@ -73,11 +70,17 @@
     }
   },
   "experimental.theme_overrides": {
-    // missing PHP colours/styles
+    // @see: https://github.com/zed-industries/zed/blob/main/crates/theme/src/fallback_themes.rs
     // @see: ~/.config/zed/themes/unity/themes/unity.json
+    //
+    // - color invisibles when not in selection
+    //
+    // missing PHP colours/styles
     // - use statements
     // - class names in method/fundtion parameter definitions
     // - name of class after "new" keyword
+    //
+    // ones that seem to be fixed / can't remember exactly what was thinking
     // - class name when executing a static method, ex Arr::get()
 
     // this is also controlling the search input background
@@ -85,9 +88,13 @@
     "editor.background": "#1b1d1e",
 
     "syntax": {
-      "operator": {
-        "color": "#e16b75" // for dollar sign in PHP variable
-      }
+      // for dollar sign in PHP variable
+      "operator": { "color": "#e16b75" },
+
+      // don't seem to be working
+      "constant.numeric": { "color": "#b5cea8" },
+      "entity.name.function": { "color": "#e06c75" },
+      "keyword.operator": { "color": "#ff0000" }
     }
   }
 }
