@@ -36,7 +36,8 @@
         "icon.placeholder": "#a9afbcff",
         "icon.accent": "#ff983d",
         "status_bar.background": "#484f52",
-        "title_bar.background": "#d5d4d5",
+        "title_bar.background": "#424854",
+        //"title_bar.background": "#d5d4d5", // ideally this one but unreadible right now
         "title_bar.foreground": "#424141", // doesn't exist in one
         "title_bar.inactive_background": "#ffffff",
         "toolbar.background": "#232527",

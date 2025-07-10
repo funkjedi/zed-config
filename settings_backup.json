@@ -39,11 +39,12 @@
     "folder_icons": true,
     "indent_size": 14
   },
-  "agent": {
+  "assistant": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4o"
-    }
+    },
+    "version": "2"
   },
   "terminal": {
     "button": false,
