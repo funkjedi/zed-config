@@ -19,6 +19,7 @@
   "buffer_font_family": "MonacoLigaturized Nerd Font Mono",
   //"buffer_font_family": "Operator Mono SSm Lig",
   "buffer_font_size": 15,
+  "hover_popover_enabled": false,
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false

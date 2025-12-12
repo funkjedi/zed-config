@@ -9,6 +9,8 @@
   {
     "context": "Workspace",
     "bindings": {
+      "cmd-b": "workspace::ToggleRightDock",
+      "cmd-l": "workspace::ToggleLeftDock",
       "ctrl-`": "workspace::ToggleBottomDock"
     }
   },
@@ -25,6 +27,8 @@
   {
     "context": "Editor",
     "bindings": {
+      "cmd-b": "workspace::ToggleRightDock",
+      "cmd-l": "workspace::ToggleLeftDock",
       "cmd-1": "workspace::ToggleBottomDock",
       "cmd-i": "assistant::InlineAssist",
       "cmd-alt-down": "editor::GoToDefinition",
