@@ -7,10 +7,18 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "edit_predictions": {
+    "provider": "none",
+  },
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Unity Dark"
+    "dark": "Unity Dark",
   },
   "icon_theme": "Unity Dark",
   "base_keymap": "SublimeText",
@@ -20,63 +28,60 @@
   //"buffer_font_family": "Operator Mono SSm Lig",
   "buffer_font_size": 15,
   "hover_popover_enabled": false,
+  "excerpt_context_lines": 0,
   "toolbar": {
     "breadcrumbs": false,
-    "quick_actions": false
+    "quick_actions": false,
   },
   "outline_panel": {
-    "button": false
+    "button": false,
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "git_panel": {
     "dock": "right",
-    "button": true
+    "button": true,
   },
   "project_panel": {
+    "show_diagnostics": "off",
+    "git_status": true,
     "dock": "right",
     "file_icons": false,
     "folder_icons": true,
-    "indent_size": 14
-  },
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
-    }
+    "indent_size": 14,
   },
   "terminal": {
     "button": false,
     "env": {
       "PHAN_DISABLE_XDEBUG_WARN": "1",
       "VSCODE_TERM": "true",
-      "XDEBUG_CONFIG": "idekey=VSCODE"
-    }
+      "XDEBUG_CONFIG": "idekey=VSCODE",
+    },
   },
   "file_finder": {
-    "file_icons": false
+    "file_icons": false,
   },
   "file_types": {
-    "Blade": ["**/*.blade.php"]
+    "Blade": ["**/*.blade.php"],
   },
   "languages": {
     "PHP": {
       "format_on_save": "off",
       "formatter": null,
       "prettier": {
-        "allowed": false
+        "allowed": false,
       },
-      "language_servers": ["intelephense", "!phpactor"]
+      "language_servers": ["intelephense", "!phpactor"],
     },
     "SQL": {
-      "format_on_save": "off"
-    }
+      "format_on_save": "off",
+    },
   },
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "theme_overrides": {
     "Unity Dark": {
@@ -94,19 +99,15 @@
       // ones that seem to be fixed / can't remember exactly what was thinking
       // - class name when executing a static method, ex Arr::get()
 
-      // this is also controlling the search input background
-      // but search background should be #303136 t match VSCode
-      "editor.background": "#1b1d1e",
-
       "syntax": {
-        // for dollar sign in PHP variable
+        // for dollar sign in PHP variable, unfortunately it also formats things like =
         "operator": { "color": "#e16b75" },
 
         // don't seem to be working
         "constant.numeric": { "color": "#b5cea8" },
         "entity.name.function": { "color": "#e06c75" },
-        "keyword.operator": { "color": "#ff0000" }
-      }
-    }
-  }
+        "keyword.operator": { "color": "#ff0000" },
+      },
+    },
+  },
 }
