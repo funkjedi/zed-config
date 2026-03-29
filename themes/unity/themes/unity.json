@@ -148,43 +148,43 @@
           {
             "cursor": "#74ade8ff",
             "background": "#74ade8ff",
-            "selection": "#373b42",
+            "selection": "#373b42"
           },
           {
             "cursor": "#be5046ff",
             "background": "#be5046ff",
-            "selection": "#be50463d",
+            "selection": "#be50463d"
           },
           {
             "cursor": "#bf956aff",
             "background": "#bf956aff",
-            "selection": "#bf956a3d",
+            "selection": "#bf956a3d"
           },
           {
             "cursor": "#b477cfff",
             "background": "#b477cfff",
-            "selection": "#b477cf3d",
+            "selection": "#b477cf3d"
           },
           {
             "cursor": "#6eb4bfff",
             "background": "#6eb4bfff",
-            "selection": "#6eb4bf3d",
+            "selection": "#6eb4bf3d"
           },
           {
             "cursor": "#d07277ff",
             "background": "#d07277ff",
-            "selection": "#d072773d",
+            "selection": "#d072773d"
           },
           {
             "cursor": "#dec184ff",
             "background": "#dec184ff",
-            "selection": "#dec1843d",
+            "selection": "#dec1843d"
           },
           {
             "cursor": "#a1c181ff",
             "background": "#a1c181ff",
-            "selection": "#a1c1813d",
-          },
+            "selection": "#a1c1813d"
+          }
         ],
         "syntax": {
           "attribute": { "color": "#d19a66" },
@@ -227,9 +227,9 @@
           "text.literal": { "color": "#98c379" },
           "type": { "color": "#e5c07b" },
           "variable": { "color": "#e06c75" },
-          "variable.special": { "color": "#e5c07b" },
-        },
-      },
-    },
-  ],
+          "variable.special": { "color": "#e5c07b" }
+        }
+      }
+    }
+  ]
 }

@@ -9,8 +9,8 @@
 {
   "agent_servers": {
     "claude-acp": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "edit_predictions": {
     "provider": "none",
@@ -26,7 +26,7 @@
   "ui_font_size": 18,
   "buffer_font_family": "MonacoLigaturized Nerd Font Mono",
   //"buffer_font_family": "Operator Mono SSm Lig",
-  "buffer_font_size": 15,
+  "buffer_font_size": 17,
   "hover_popover_enabled": false,
   "excerpt_context_lines": 0,
   "toolbar": {
