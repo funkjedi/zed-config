@@ -16,6 +16,7 @@ Replicate the **UnityDark** VSCode theme as accurately as possible in Zed's them
 │   ├── extension.toml              # Extension manifest
 │   ├── themes/unity.json           # ← MAIN THEME FILE (Zed format)
 │   └── icon_themes/unity.json      # Icon theme (separate concern)
+├── docs/decisions/                 # ADRs (NNNN-title.md, see README.md)
 ├── settings.json                   # Zed editor settings (includes theme_overrides and known issues)
 ├── keymap.json                     # Zed keybindings
 └── README.md
