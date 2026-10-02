@@ -18,6 +18,7 @@
       "type": "registry",
     },
   },
+  "minimum_contrast_for_highlights": 0, // stop recoloring selection text
   "edit_predictions": {
     "provider": "none",
   },
