@@ -91,6 +91,13 @@
       "format_on_save": "off",
     },
   },
+  "lsp": {
+    "intelephense": {
+      "initialization_options": {
+        "licenceKey": "/Users/tim/intelephense/licence.txt"
+      }
+    },
+  },
   "git": {
     "enable_diff": true,
     "inline_blame": {
