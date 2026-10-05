@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "title_bar": {
+    "show_branch_status_icon": false,
+    "show_worktree_name": false,
+    "show_project_items": true
+  },
   "cli_default_open_behavior": "new_window",
   "agent": {
     "dock": "right",
